@@ -15,93 +15,141 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 232, 241, 255),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Top Up'),
                         ),
-                        child: const Icon(
-                          Icons.add,
-                          size: 32,
-                          color: Color.fromARGB(255, 30, 136, 229),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 232, 241, 255),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.add,
+                            size: 32,
+                            color: Color.fromARGB(255, 30, 136, 229),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Top Up',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Top Up',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 232, 241, 255),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Transfer'),
                         ),
-                        child: const Icon(
-                          Icons.send,
-                          size: 32,
-                          color: Color.fromARGB(255, 30, 136, 229),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 232, 241, 255),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.send,
+                            size: 32,
+                            color: Color.fromARGB(255, 30, 136, 229),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Transfer',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Transfer',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 255, 243, 224),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Scan QR'),
                         ),
-                        child: const Icon(
-                          Icons.qr_code_scanner,
-                          size: 32,
-                          color: Color.fromARGB(255, 230, 81, 0),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 243, 224),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.qr_code_scanner,
+                            size: 32,
+                            color: Color.fromARGB(255, 230, 81, 0),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Scan QR',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Scan QR',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 232, 245, 233),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Riwayat'),
                         ),
-                        child: const Icon(
-                          Icons.receipt_long,
-                          size: 32,
-                          color: Color.fromARGB(255, 46, 125, 50),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 232, 245, 233),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.receipt_long,
+                            size: 32,
+                            color: Color.fromARGB(255, 46, 125, 50),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Riwayat',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Riwayat',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -111,93 +159,141 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 255, 235, 238),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Pulsa & Data'),
                         ),
-                        child: const Icon(
-                          Icons.smartphone,
-                          size: 32,
-                          color: Color.fromARGB(255, 233, 30, 99),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 235, 238),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.smartphone,
+                            size: 32,
+                            color: Color.fromARGB(255, 233, 30, 99),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Pulsa & Data',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Pulsa & Data',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 255, 248, 225),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Voucher Game'),
                         ),
-                        child: const Icon(
-                          Icons.sports_esports,
-                          size: 32,
-                          color: Color.fromARGB(255, 255, 160, 0),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 248, 225),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.sports_esports,
+                            size: 32,
+                            color: Color.fromARGB(255, 255, 160, 0),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Voucher Game',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Voucher Game',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 243, 229, 245),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Transportasi'),
                         ),
-                        child: const Icon(
-                          Icons.directions_bus,
-                          size: 32,
-                          color: Color.fromARGB(255, 142, 36, 170),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 243, 229, 245),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.directions_bus,
+                            size: 32,
+                            color: Color.fromARGB(255, 142, 36, 170),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Transportasi',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Transportasi',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 225, 245, 254),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Tagihan Air'),
                         ),
-                        child: const Icon(
-                          Icons.water_drop,
-                          size: 32,
-                          color: Color.fromARGB(255, 2, 136, 209),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 225, 245, 254),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.water_drop,
+                            size: 32,
+                            color: Color.fromARGB(255, 2, 136, 209),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Tagihan Air',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Tagihan Air',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -207,93 +303,141 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 232, 245, 233),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Listrik'),
                         ),
-                        child: const Icon(
-                          Icons.bolt,
-                          size: 32,
-                          color: Color.fromARGB(255, 0, 200, 83),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 232, 245, 233),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.bolt,
+                            size: 32,
+                            color: Color.fromARGB(255, 0, 200, 83),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Listrik',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Listrik',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 255, 235, 238),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'TV Kabel'),
                         ),
-                        child: const Icon(
-                          Icons.tv,
-                          size: 32,
-                          color: Color.fromARGB(255, 255, 64, 129),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 235, 238),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.tv,
+                            size: 32,
+                            color: Color.fromARGB(255, 255, 64, 129),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'TV Kabel',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'TV Kabel',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 243, 229, 245),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Streaming'),
                         ),
-                        child: const Icon(
-                          Icons.credit_card,
-                          size: 32,
-                          color: Color.fromARGB(255, 124, 77, 255),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 243, 229, 245),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.credit_card,
+                            size: 32,
+                            color: Color.fromARGB(255, 124, 77, 255),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Streaming',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Streaming',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 255, 235, 238),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Belanja'),
                         ),
-                        child: const Icon(
-                          Icons.shopping_bag,
-                          size: 32,
-                          color: Color.fromARGB(255, 255, 23, 68),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 235, 238),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.shopping_bag,
+                            size: 32,
+                            color: Color.fromARGB(255, 255, 23, 68),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Belanja',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Belanja',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -303,96 +447,145 @@ class MenuPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 232, 241, 255),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Donasi'),
                         ),
-                        child: const Icon(
-                          Icons.volunteer_activism,
-                          size: 32,
-                          color: Color.fromARGB(255, 25, 118, 210),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 232, 241, 255),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.volunteer_activism,
+                            size: 32,
+                            color: Color.fromARGB(255, 25, 118, 210),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Donasi',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Donasi',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 232, 245, 233),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Asuransi'),
                         ),
-                        child: const Icon(
-                          Icons.verified_user,
-                          size: 32,
-                          color: Color.fromARGB(255, 0, 230, 118),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 232, 245, 233),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.verified_user,
+                            size: 32,
+                            color: Color.fromARGB(255, 0, 230, 118),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Asuransi',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Asuransi',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 255, 248, 225),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Investasi'),
                         ),
-                        child: const Icon(
-                          Icons.monetization_on,
-                          size: 32,
-                          color: Color.fromARGB(255, 255, 179, 0),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 248, 225),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.monetization_on,
+                            size: 32,
+                            color: Color.fromARGB(255, 255, 179, 0),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Investasi',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Investasi',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        width: 65,
-                        height: 65,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 245, 245, 245),
-                          borderRadius: BorderRadius.circular(16),
+                  InkWell(
+                    borderRadius: BorderRadius.circular(16),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const HalamanKosong(title: 'Lainnya'),
                         ),
-                        child: const Icon(
-                          Icons.apps,
-                          size: 32,
-                          color: Color.fromARGB(255, 117, 117, 117),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 245, 245, 245),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: const Icon(
+                            Icons.apps,
+                            size: 32,
+                            color: Color.fromARGB(255, 117, 117, 117),
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      const Text(
-                        'Lainnya',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Lainnya',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
+              const SizedBox(height: 20),
               const SizedBox(height: 30),
 
               // Tombol Kembali
@@ -406,6 +599,20 @@ class MenuPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+// ===== Halaman tujuan (kosong), dipakai saat icon ditekan =====
+class HalamanKosong extends StatelessWidget {
+  final String title;
+  const HalamanKosong({super.key, required this.title});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text(title)),
+      body: const SizedBox(),
     );
   }
 }
