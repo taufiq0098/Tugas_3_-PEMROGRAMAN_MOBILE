@@ -3,6 +3,7 @@ import 'pages/halaman_home.dart';
 import 'pages/halaman_menu.dart';
 import 'pages/profil_page.dart';
 import 'widget/navbar.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {
   runApp(const MyApp());

@@ -3,6 +3,11 @@
         android:label="coba3"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+        <!-- Google Maps API Key: Ganti value dengan Google Maps API Key Anda -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD8tXL5XvrWofF3zDF63D2q_BW3Y8AlrOs" />        
         <activity
             android:name=".MainActivity"
             android:exported="true"
